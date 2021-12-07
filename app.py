@@ -1,3 +1,6 @@
+# A course project of ELEN 6770
+# Xin Huang (UNI:xh2510)
+
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 
