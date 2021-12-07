@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block main %}
+<h3>All Messages</h3>
+<ul>
+    {% for message in messages %}
+        <li>「 {{ message.title }} 」  @ {{ message.date }}</li>
+    {% endfor %}
+</ul>
+{% endblock main %}

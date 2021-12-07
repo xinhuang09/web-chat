@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block main %}
+<p>Enter Message and Click "Send"</p>
+<form action="/message" method="post">
+    {{ form.csrf_token() }}
+    {{ form.title.label() }}
+    {{ form.title }}
+    {{ form.submit }}
+</form>
+
+{% if title %}
+    <h1>{{ title }}</h1>
+{% endif %}
+
+{% endblock main %}
